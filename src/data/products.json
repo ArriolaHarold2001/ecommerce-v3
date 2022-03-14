@@ -1,0 +1,143 @@
+{
+  "featuredProducts": {
+    "fireSection": [
+      {
+        "id": "featured-item--01",
+        "title": "Blue Flame",
+        "description": "A flame with a tint of the blue sky",
+        "price": "$2.9",
+        "productImg": "../img/fire/detailed_fire_10.jpeg"
+      },
+      {
+        "id": "featured-item--02",
+        "title": "Charred Night",
+        "description": "smell the flame",
+        "price": "$2.9",
+        "productImg": "../img/fire/detailed_fire_11.jpeg"
+      },
+      {
+        "id": "featured-item--03",
+        "title": "Pit",
+        "description": "enjoy with friends",
+        "price": "$2.9",
+        "productImg": "../img/fire/detailed_fire_17.jpeg"
+      },
+      {
+        "id": "featured-item--04",
+        "title": "Fire Wood",
+        "description": "feed the flame",
+        "price": "$2.9",
+        "productImg": "../img/fire/detailed_fire_28.jpeg"
+      }
+    ],
+    "leatherSection": [
+      {
+        "id": "featured-item--05",
+        "title": "danger",
+        "description": "hidden",
+        "price": "$2.9",
+        "productImg": "../img/people/HandsFeb2020-6630.jpeg"
+      },
+      {
+        "id": "featured-item--06",
+        "title": "rough",
+        "description": "Toxic",
+        "price": "$2.9",
+        "productImg": "../img/people/HandsFeb2020-6624.jpeg"
+      },
+      {
+        "id": "featured-item--07",
+        "title": "hidden",
+        "description": "Fun",
+        "price": "$2.9",
+        "productImg": "../img/people/HandsFeb2020-6623.jpeg"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "featured-item--01",
+      "title": "Nissan",
+      "description": "370z with style high above the clouds",
+      "price": "$20",
+      "productImg": "../img/product/370z_032020-6816.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "California",
+      "description": "Fashionable display of NucaPrints fashion",
+      "price": "$15",
+      "productImg": "../img/people/HandsFeb2020-6624.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "King Size",
+      "description": "Fearless, expressive, and quality clothing",
+      "price": "$15",
+      "productImg": "../img/people/HandsFeb2020-6623.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Scary",
+      "description": "Abstract of our clothing, perfect for movie sets 🤩",
+      "price": "$20",
+      "productImg": "../img/product/HandsFeb2020-6620.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Fire Hurts",
+      "description": "Such a familiar shot yet so different",
+      "price": "$20",
+      "productImg": "../img/fire/detailed_fire_8.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Nissan 2",
+      "description": "370z returns as the fastest print in our shop",
+      "price": "$20",
+      "productImg": "/../img/product/370z_032020-6819.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Untitled",
+      "description": "Inspired by the Untitled artist",
+      "price": "$20",
+      "productImg": "../img/product/52719_GFM_1-3171.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Dev Stick",
+      "description": "Useful for debugging a room's functuay",
+      "price": "$20",
+      "productImg": "../img/product/Butterfly-cuz-falledits-081419-5042.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Lisa",
+      "description": "Perfection in a portrait made for you",
+      "price": "$30",
+      "productImg": "../img/people/IMG_2020.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Happy Trees",
+      "description": "Not to be confused with Happy Trees",
+      "price": "$20",
+      "productImg": "../img/product/Cuz-outside-080619-4946.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Why?",
+      "description": "Mysterious yet Elegant",
+      "price": "$50",
+      "productImg": "../img/people/reedy_adventures-7035.jpeg"
+    },
+    {
+      "id": "featured-item--01",
+      "title": "Peeky",
+      "description": "Shown but hidden behind shadows",
+      "price": "$50",
+      "productImg": "../img/people/reedy_adventures-7039.jpeg"
+    }
+  ]
+}

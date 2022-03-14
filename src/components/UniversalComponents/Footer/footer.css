@@ -1,0 +1,35 @@
+/* **************** */
+/* UNIVERSAL FOOTER */
+/* **************** */
+
+.main-footer_container {
+  height: 45vh;
+  border-top: 0.5rem solid #f03e3e;
+  background-color: #212529;
+  color: #fff5f5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-footer_item {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.main-footer_item a:link,
+.main-footer_item a:visited {
+  color: #fff5f5;
+}
+
+.main-footer_item a:hover,
+.main-footer_item a:active {
+  color: #f03e3e;
+}
+
+.footer-img {
+  width: 10rem;
+}

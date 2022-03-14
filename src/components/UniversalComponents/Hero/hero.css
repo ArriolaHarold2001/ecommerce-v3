@@ -1,0 +1,58 @@
+/* UNIVERSAL HERO */
+/* ************** */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 0 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero h1 {
+  color: #fff5f5;
+  text-shadow: -0.2rem -0.2rem 0.8rem #1864ab, 0.4rem -0.4rem 0.6rem #c92a2a,
+    -0.6rem 0.6rem 0.4rem #2b8a3e, 0.8rem 0.8rem 0.2rem #d9480f;
+  text-transform: uppercase;
+}
+
+.hero-section_spacer {
+  color: #fff5f5;
+  background-color: rgba(33, 37, 41, 0.5);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  line-height: 2.4rem;
+  text-shadow: -0.1rem -0.1rem 0.1rem #212529, 0.1rem -0.1rem 0.1rem #212529,
+    -0.1rem 0.1rem 0.1rem #212529, 0.1rem 0.1rem 0.1rem #212529;
+
+  display: flex;
+  width: 35rem;
+}
+
+/* LANDING HERO */
+/* ************ */
+.hero-section_main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../../../public/img/people/Abbey_Andy_modelshoot01-100719-5858.jpeg");
+}
+
+/* SHOP PAGE HERO */
+/* ************** */
+.hero-section_second {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../../../public/img/people/cuz-kat_073119-4667.jpeg");
+}
+
+/* CONTACT PAGE HERO */
+/* ***************** */
+.hero-section_contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 0, 0, 0.2)),
+    url("../../../../public/img/people/reedy_adventures-7036.jpeg");
+}
