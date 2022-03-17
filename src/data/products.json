@@ -32,21 +32,21 @@
     ],
     "leatherSection": [
       {
-        "id": "featured-item--05",
+        "id": "5",
         "title": "danger",
         "description": "hidden",
         "price": "$2.9",
         "productImg": "../img/people/HandsFeb2020-6630.jpeg"
       },
       {
-        "id": "featured-item--06",
+        "id": "6",
         "title": "rough",
         "description": "Toxic",
         "price": "$2.9",
         "productImg": "../img/people/HandsFeb2020-6624.jpeg"
       },
       {
-        "id": "featured-item--07",
+        "id": "7",
         "title": "hidden",
         "description": "Fun",
         "price": "$2.9",
@@ -95,7 +95,7 @@
       "title": "Nissan 2",
       "description": "370z returns as the fastest print in our shop",
       "price": "$20",
-      "productImg": "/../img/product/370z_032020-6819.jpeg"
+      "productImg": "../img/product/370z_032020-6819.jpeg"
     },
     {
       "id": "featured-item--01",

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
 import ShopHero from "../UniversalComponents/Hero/ShopHero";
-import Data from "../../data/products.json";
+import Nav from "../UniversalComponents/Nav/Nav";
+import Footer from "../UniversalComponents/Footer/Footer";
+import ProductComponent from "./ProductComponent";
 import "./shop.css";
+// import "../../App.css";
 
 const Shop = () => {
-  const [products, setProducts] = useState(Data.products);
   return (
     <>
+      <Nav />
       <ShopHero />
 
       <main class="shop-section_grid">
@@ -33,16 +35,9 @@ const Shop = () => {
             <a href="#">Signature Shots</a>
           </div>
         </aside>
-
-        {products.map((data) => (
-          <div className="item_shop item--01" key={data.id}>
-            <h2>{data.title}</h2>
-            <img src={data.productImg} class="shop-img" alt="Car" />
-            <p>{data.description}</p>
-            <h5>{data.price}</h5>
-          </div>
-        ))}
+        <ProductComponent />
       </main>
+      <Footer />
     </>
   );
 };

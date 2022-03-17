@@ -1,10 +1,14 @@
 import React from "react";
 import ContactHero from "../UniversalComponents/Hero/ContactHero";
+import Nav from "../UniversalComponents/Nav/Nav";
+import Footer from "../UniversalComponents/Footer/Footer";
 import "./contact.css";
+// import "../../App.css";
 
 const Contact = () => {
   return (
     <>
+      <Nav />
       <ContactHero />
       <form class="contact-form">
         <div class="form-item form-item--01">
@@ -57,6 +61,7 @@ const Contact = () => {
           Send
         </button>
       </form>
+      <Footer />
     </>
   );
 };
