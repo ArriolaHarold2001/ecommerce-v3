@@ -3,29 +3,25 @@ import React, { useState } from "react";
 import "./navStyles.css";
 
 const Nav = () => {
-  const primaryNav = document.querySelector(".nav-section_spacer");
-  const navToggle = document.querySelector(".mobile-nav-toggle");
-  // let [navItem, setNavItem] = useState(primaryNav);
+  let [navItem, setNavItem] = useState("false");
 
-  // const primaryNav = document.querySelector(".nav-section_spacer");
+  function showNav() {
+    setNavItem("true");
 
-  const showNav = () => {
-    const navVisibility = primaryNav.getAttribute("data-visible");
-    // setNavItem = "true";
-
-    if (navVisibility === "false") {
-      primaryNav.setAttribute("data-visible", true);
-    } else {
-      primaryNav.setAttribute("data-visible", true);
+    if (navItem === "true") {
+      setNavItem("false");
     }
-  };
+
+    console.log(navItem);
+    return navItem;
+  }
 
   return (
     <>
-      <button class="mobile-nav-toggle" onCLick={showNav}>
+      <button className="mobile-nav-toggle" onClick={showNav}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="mobile-nav_logo"
+          className="mobile-nav_logo"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -38,11 +34,11 @@ const Nav = () => {
           />
         </svg>
       </button>
-      <nav class="nav-section_main nav-section_main-mobile">
-        <div class="nav-section_logo">
+      <nav className="nav-section_main nav-section_main-mobile">
+        <div className="nav-section_logo">
           <a href="/home">NucaPrints</a>
         </div>
-        <div class="nav-section_spacer" data-visible="false">
+        <div className="nav-section_spacer" data-visible={navItem}>
           <a href="/home">Home</a>
           <a href="/shop">Shop</a>
           <a href="/contact">Contact</a>
