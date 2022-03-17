@@ -1,11 +1,10 @@
 import React from "react";
 import "./hero.css";
-import "../../../App.css";
 
 const ShopHero = () => {
   return (
     <>
-      <header class="hero-section_second hero">
+      <header className="hero-section_second hero">
         <h1>NucaPrints | Shop</h1>
       </header>
     </>

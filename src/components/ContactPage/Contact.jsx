@@ -10,8 +10,8 @@ const Contact = () => {
     <>
       <Nav />
       <ContactHero />
-      <form class="contact-form">
-        <div class="form-item form-item--01">
+      <form className="contact-form">
+        <div className="form-item form-item--01">
           <label>First Name</label>
           <input
             placeholder="Joe? Maria?... "
@@ -20,7 +20,7 @@ const Contact = () => {
             name="name"
           />
         </div>
-        <div class="form-item form-item--02">
+        <div className="form-item form-item--02">
           <label>Last Name</label>
           <input
             placeholder="Smith? Johnson?..."
@@ -29,7 +29,7 @@ const Contact = () => {
             name="name"
           />
         </div>
-        <div class="form-item form-item--03">
+        <div className="form-item form-item--03">
           <label>Email</label>
           <input
             placeholder="Email@email.com"
@@ -38,7 +38,7 @@ const Contact = () => {
             name="email"
           />
         </div>
-        <div class="form-item form-item--04">
+        <div className="form-item form-item--04">
           <label>Phone Number</label>
           <input
             placeholder="Ill send a goodnight txt"
@@ -48,7 +48,7 @@ const Contact = () => {
             name="phoneNumber"
           />
         </div>
-        <div class="form-item form-item--05">
+        <div className="form-item form-item--05">
           <label>Comments</label>
           <textarea
             rows="5"
@@ -57,7 +57,7 @@ const Contact = () => {
             name="comment"
           ></textarea>
         </div>
-        <button class="form-btn form-item_06" type="submit" name="submit">
+        <button className="form-btn form-item_06" type="submit" name="submit">
           Send
         </button>
       </form>

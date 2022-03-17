@@ -11,13 +11,13 @@ const Shop = () => {
       <Nav />
       <ShopHero />
 
-      <main class="shop-section_grid">
-        <aside class="shop-nav dropdown">
-          <button class="dropbtn">
+      <main className="shop-section_grid">
+        <aside className="shop-nav dropdown">
+          <button className="dropbtn">
             Product Type
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="dropdown shop-svg"
+              className="dropdown shop-svg"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -28,7 +28,11 @@ const Shop = () => {
               />
             </svg>
           </button>
-          <div id="myDropDown" class="dropdown-content" data-visible="false">
+          <div
+            id="myDropDown"
+            className="dropdown-content"
+            data-visible="false"
+          >
             <a href="#">Cars</a>
             <a href="#">Black/White</a>
             <a href="#">Bright</a>
