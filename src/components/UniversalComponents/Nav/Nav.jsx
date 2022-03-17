@@ -12,7 +12,6 @@ const Nav = () => {
       setNavItem("false");
     }
 
-    console.log(navItem);
     return navItem;
   }
 
