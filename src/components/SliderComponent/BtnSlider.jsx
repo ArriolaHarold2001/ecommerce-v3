@@ -6,6 +6,7 @@ import rightArrow from "./arrows/right-arrow.svg";
 const BtnSlider = ({ direction, moveSlide }) => {
   return (
     <button
+      onTouchEnd={moveSlide}
       onClick={moveSlide}
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >
