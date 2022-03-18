@@ -8,7 +8,7 @@ const ProductComponent = () => {
       {products.map((data) => (
         <div className="item_shop item--01" key={data.id}>
           <h2>{data.title}</h2>
-          <img src={data.productImg} className="shop-img" alt="Car" />
+          <img src={data.productImg} className="shop-img" alt={data.alt} />
           <p>{data.description}</p>
           <h5>{data.price}</h5>
         </div>

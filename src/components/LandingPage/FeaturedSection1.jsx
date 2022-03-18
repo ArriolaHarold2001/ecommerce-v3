@@ -9,7 +9,7 @@ const FeaturedProducts1 = () => {
       {fireProducts.fireSection.map((fireContent) => (
         <div className="featured-item featured-item--01" key={fireContent.id}>
           <h3>{fireContent.title}</h3>
-          <img src={fireContent.productImg} alt="Print of a fire" />
+          <img src={fireContent.productImg} alt={fireContent.alt} />
           <p>{fireContent.description}</p>
         </div>
       ))}

@@ -6,28 +6,32 @@
         "title": "Blue Flame",
         "description": "A flame with a tint of the blue sky",
         "price": "$2.9",
-        "productImg": "../img/fire/detailed_fire_10.jpeg"
+        "productImg": "../img/fire/detailed_fire_10.jpeg",
+        "alt": "flame"
       },
       {
         "id": "featured-item--02",
         "title": "Charred Night",
         "description": "smell the flame",
         "price": "$2.9",
-        "productImg": "../img/fire/detailed_fire_11.jpeg"
+        "productImg": "../img/fire/detailed_fire_11.jpeg",
+        "alt": "flame"
       },
       {
         "id": "featured-item--03",
         "title": "Pit",
         "description": "enjoy with friends",
         "price": "$2.9",
-        "productImg": "../img/fire/detailed_fire_17.jpeg"
+        "productImg": "../img/fire/detailed_fire_17.jpeg",
+        "alt": "flame"
       },
       {
         "id": "featured-item--04",
         "title": "Fire Wood",
         "description": "feed the flame",
         "price": "$2.9",
-        "productImg": "../img/fire/detailed_fire_28.jpeg"
+        "productImg": "../img/fire/detailed_fire_28.jpeg",
+        "alt": "flame"
       }
     ],
     "leatherSection": [
@@ -36,108 +40,163 @@
         "title": "danger",
         "description": "hidden",
         "price": "$2.9",
-        "productImg": "../img/people/HandsFeb2020-6630.jpeg"
+        "productImg": "../img/people/HandsFeb2020-6630.jpeg",
+        "alt": "nucaPrints model in black and white"
       },
       {
         "id": "6",
         "title": "rough",
         "description": "Toxic",
         "price": "$2.9",
-        "productImg": "../img/people/HandsFeb2020-6624.jpeg"
+        "productImg": "../img/people/HandsFeb2020-6624.jpeg",
+        "alt": "nucaPrints model in black and white"
       },
       {
         "id": "7",
         "title": "hidden",
         "description": "Fun",
         "price": "$2.9",
-        "productImg": "../img/people/HandsFeb2020-6623.jpeg"
+        "productImg": "../img/people/HandsFeb2020-6623.jpeg",
+        "alt": "nucaPrints model in black and white"
       }
     ]
   },
   "products": [
     {
-      "id": "featured-item--01",
+      "id": "item--01",
       "title": "Nissan",
       "description": "370z with style high above the clouds",
       "price": "$20",
-      "productImg": "../img/product/370z_032020-6816.jpeg"
+      "productImg": "../img/product/370z_032020-6816.jpeg",
+      "alt": "370z car"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--02",
       "title": "California",
       "description": "Fashionable display of NucaPrints fashion",
       "price": "$15",
-      "productImg": "../img/people/HandsFeb2020-6624.jpeg"
+      "productImg": "../img/people/HandsFeb2020-6624.jpeg",
+      "alt": "nucaPrints model"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--03",
       "title": "King Size",
       "description": "Fearless, expressive, and quality clothing",
       "price": "$15",
-      "productImg": "../img/people/HandsFeb2020-6623.jpeg"
+      "productImg": "../img/people/HandsFeb2020-6623.jpeg",
+      "alt": "NucaPrints model"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--04",
       "title": "Scary",
-      "description": "Abstract of our clothing, perfect for movie sets 🤩",
+      "description": "Abstract of our clothing, perfect for movie sets",
       "price": "$20",
-      "productImg": "../img/product/HandsFeb2020-6620.jpeg"
+      "productImg": "../img/product/HandsFeb2020-6620.jpeg",
+      "alt": "hand of model"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--05",
       "title": "Fire Hurts",
       "description": "Such a familiar shot yet so different",
       "price": "$20",
-      "productImg": "../img/fire/detailed_fire_8.jpeg"
+      "productImg": "../img/fire/detailed_fire_8.jpeg",
+      "alt": "fire"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--06",
       "title": "Nissan 2",
       "description": "370z returns as the fastest print in our shop",
       "price": "$20",
-      "productImg": "../img/product/370z_032020-6819.jpeg"
+      "productImg": "../img/product/370z_032020-6819.jpeg",
+      "alt": "370z car"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--07",
       "title": "Untitled",
       "description": "Inspired by the Untitled artist",
       "price": "$20",
-      "productImg": "../img/product/52719_GFM_1-3171.jpeg"
+      "productImg": "../img/product/52719_GFM_1-3171.jpeg",
+      "alt": "nature"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--08",
       "title": "Dev Stick",
       "description": "Useful for debugging a room's functuay",
       "price": "$20",
-      "productImg": "../img/product/Butterfly-cuz-falledits-081419-5042.jpeg"
+      "productImg": "../img/product/Butterfly-cuz-falledits-081419-5042.jpeg",
+      "alt": "tiki torch"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--09",
       "title": "Lisa",
       "description": "Perfection in a portrait made for you",
       "price": "$30",
-      "productImg": "../img/people/IMG_2020.jpeg"
+      "productImg": "../img/people/IMG_2020.jpeg",
+      "alt": "portrait"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--10",
       "title": "Happy Trees",
       "description": "Not to be confused with Happy Trees",
       "price": "$20",
-      "productImg": "../img/product/Cuz-outside-080619-4946.jpeg"
+      "productImg": "../img/product/Cuz-outside-080619-4946.jpeg",
+      "alt": "sky overexposed"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--11",
       "title": "Why?",
       "description": "Mysterious yet Elegant",
       "price": "$50",
-      "productImg": "../img/people/reedy_adventures-7035.jpeg"
+      "productImg": "../img/people/reedy_adventures-7035.jpeg",
+      "alt": "portrait"
     },
     {
-      "id": "featured-item--01",
+      "id": "item--12",
       "title": "Peeky",
       "description": "Shown but hidden behind shadows",
       "price": "$50",
-      "productImg": "../img/people/reedy_adventures-7039.jpeg"
+      "productImg": "../img/people/reedy_adventures-7039.jpeg",
+      "alt": "portrait"
+    },
+    {
+      "id": "item--13",
+      "title": "Blue Flame",
+      "description": "A flame with a tint of the blue sky",
+      "price": "$15",
+      "productImg": "../img/fire/detailed_fire_10.jpeg",
+      "alt": "flame"
+    },
+    {
+      "id": "item--14",
+      "title": "Charred Night",
+      "description": "smell the flame",
+      "price": "$15",
+      "productImg": "../img/fire/detailed_fire_11.jpeg",
+      "alt": "flame"
+    },
+    {
+      "id": "item--15",
+      "title": "Pit",
+      "description": "enjoy with friends",
+      "price": "$15",
+      "productImg": "../img/fire/detailed_fire_17.jpeg",
+      "alt": "flame"
+    },
+    {
+      "id": "item--16",
+      "title": "Fire Wood",
+      "description": "feed the flame",
+      "price": "$15",
+      "productImg": "../img/fire/detailed_fire_28.jpeg",
+      "alt": "flame"
+    },
+    {
+      "id": "item--17",
+      "title": "danger",
+      "description": "hidden",
+      "price": "$15",
+      "productImg": "../img/people/HandsFeb2020-6630.jpeg",
+      "alt": "nucaPrints model in black and white"
     }
   ],
   "slider": [
@@ -171,6 +230,5 @@
       "testimonial": "NucaPrints answered all my questions and conncerns I had before buying my first Art Print. I am glad I chose NucaPrints!",
       "alt": "customer smiling at camera"
     }
-  ],
-  "testimonial-background": "../img/logo/testimonial-background.svg"
+  ]
 }

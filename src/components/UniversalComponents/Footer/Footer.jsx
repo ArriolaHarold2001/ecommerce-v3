@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="main-footer_container">
       <div className="main-footer_item">
-        <a href="index.html">Home</a>
-        <a href="product.html">Shop</a>
-        <a href="contact.html">Contact</a>
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/contact">Contact</a>
       </div>
       <div className="main-footer_social">
         <a

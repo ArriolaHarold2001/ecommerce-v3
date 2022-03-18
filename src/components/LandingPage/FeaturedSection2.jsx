@@ -14,7 +14,7 @@ const FeaturedProducts2 = () => {
           key={leatherContent.id}
         >
           <h3>{leatherContent.title}</h3>
-          <img src={leatherContent.productImg} alt="#" />
+          <img src={leatherContent.productImg} alt={leatherContent.alt} />
           <p>{leatherContent.description}</p>
         </div>
       ))}
