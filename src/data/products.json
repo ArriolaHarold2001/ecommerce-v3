@@ -139,5 +139,20 @@
       "price": "$50",
       "productImg": "../img/people/reedy_adventures-7039.jpeg"
     }
-  ]
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "img": "../img/fire/detailed_fire_10.jpeg",
+      "testimonial": "NucaPrints is one of the best companies ever! I bought this jacket from NucaPrints and I wear it everyday.",
+      "alt": "customer in front of green bush"
+    },
+    {
+      "id": 2,
+      "img": "../img/fire/detailed_fire_10.jpeg",
+      "testimonial": "NucaPrints answered all my questions and conncerns I had before buying my first Art Print. I am glad I chose NucaPrints!",
+      "alt": "customer smiling at camera"
+    }
+  ],
+  "testimonial-background": "../img/logo/testimonial-background.svg"
 }

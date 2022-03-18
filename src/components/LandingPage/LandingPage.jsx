@@ -3,6 +3,7 @@ import LandingHero from "../UniversalComponents/Hero/LandingHero";
 import Footer from "../UniversalComponents/Footer/Footer";
 import FeaturedProducts1 from "./FeaturedSection1";
 import FeaturedProducts2 from "./FeaturedSection2";
+import Slider from "../SliderComponent/Slider";
 // import "../../App.css";
 
 const LandingPage = () => {
@@ -29,6 +30,7 @@ const LandingPage = () => {
           <FeaturedProducts2 />
         </section>
       </main>
+      <Slider />
       <Footer />
     </>
   );
