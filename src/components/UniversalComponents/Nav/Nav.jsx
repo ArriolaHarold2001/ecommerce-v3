@@ -31,12 +31,6 @@ const Nav = () => {
             strokeWidth="2"
             d="M4 6h16M4 12h16M4 18h16"
           />
-          {/* <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          /> */}
         </svg>
       </button>
       <nav className="nav-section_main nav-section_main-mobile">
@@ -44,7 +38,7 @@ const Nav = () => {
           <a href="/home">NucaPrints</a>
         </div>
         <div className="nav-section_spacer" data-visible={navItem}>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/shop">Shop</a>
           <a href="/contact">Contact</a>
         </div>
