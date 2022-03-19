@@ -14,6 +14,7 @@ const Contact = () => {
       <form className="contact-form">
         <Form />
       </form>
+
       <Footer />
     </>
   );

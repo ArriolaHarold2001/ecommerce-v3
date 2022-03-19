@@ -19,18 +19,23 @@ const Form = () => {
             onChange={handleForm}
             name={item.name}
             required={item.required}
-            placeholder={item.placeHolder}
+            // placeholder={item.placeHolder}
             id={item.inID}
             type={item.type}
             pattern={item.pattern}
           ></input>
         </div>
       ))}
-      <button
-        className="form-btn form-item_06"
-        name="submit"
-        onClick={handleSubmit}
-      >
+      <div class="form-item">
+        <label>Comments</label>
+        <textarea
+          rows="5"
+          cols="20"
+          placeholder="Hi leave comment"
+          name="comment"
+        ></textarea>
+      </div>
+      <button className="form-btn form-item_06" name="submit" type="submit">
         Send
       </button>
     </>

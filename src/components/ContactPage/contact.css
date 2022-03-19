@@ -51,61 +51,65 @@ h5 {
 /* ************ */
 
 .contact-form {
-  width: 100%;
+  width: 60%;
+  margin: 6rem auto;
+  padding: 6rem 0 0 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  text-align: center;
+  background-color: #fff4f1;
+  border: 1.5rem ridge #212529;
+  box-shadow: rgba(0, 0, 0, 0.4) 0rem 3rem 9rem;
 }
 
 .form-item {
-  margin: 0 auto;
-  height: 35vh;
-  width: 50%;
-  padding: 6rem 6rem;
-  font-size: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  width: 70%;
+  padding: 1.5rem 0;
+  font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .form-item input {
-  width: 100%;
-  height: 10rem;
+  height: 3rem;
   background-color: transparent;
   color: #212529;
-  border: none;
+  border: 0.1rem solid #212529;
+  padding: 0.9rem;
 }
 
 input[type="text"] {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  outline: none;
 }
 input[type="email"] {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  outline: none;
 }
 
 .form-item textarea {
+  width: 100%;
+  padding: 1rem;
   font-family: "Montserrat", sans-serif;
-  border: none;
+  border: 0.1rem solid #212529;
   background-color: transparent;
   resize: none;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #212529;
-}
-
-.form-item--05 {
-  height: 50vh;
-}
-
-.form-item input:focus,
-.form-item textarea:focus {
   outline: none;
 }
 
@@ -113,34 +117,31 @@ input[type="email"] {
   width: 100%;
   height: 10vh;
   color: #fff5f5;
-  background-color: #c92a2a;
   border: none;
   cursor: pointer;
-
   text-transform: uppercase;
   font-size: 2.441rem;
   font-weight: 500;
-
-  box-shadow: 0 1rem 4rem#212529;
+  background-color: #212529;
+  box-shadow: 0rem -0.5rem rgba(33, 37, 41, 0.4),
+    0rem -1rem rgba(33, 37, 41, 0.3), 0rem -1.5rem rgba(33, 37, 41, 0.2),
+    0rem -2rem rgba(33, 37, 41, 0.1), 0rem -2.5rem rgba(33, 37, 41, 0.05);
 }
 
 .form-btn:hover {
   color: #fff5f5;
   background-color: #f03e3e;
+  background-color: #c92a2a;
+  box-shadow: 0rem -0.5rem rgba(201, 42, 42, 0.4),
+    0rem -1rem rgba(201, 42, 42, 0.3), 0rem -1.5rem rgba(201, 42, 42, 0.2),
+    0rem -2rem rgba(201, 42, 42, 0.1), 0rem -2.5rem rgba(201, 42, 42, 0.05);
 }
 .form-btn:active {
   color: #fff5f5;
   background-color: #d9480f;
-}
-
-.form-item:nth-child(even) {
-  background-color: #ffc9c9;
-  box-shadow: 0 1rem 3rem #212529;
-}
-
-.form-item:nth-child(odd) {
-  background-color: #ffe3e3;
-  box-shadow: 0 -0.01rem 1rem #212529;
+  box-shadow: 0rem -0.5rem rgba(217, 72, 15, 0.4),
+    0rem -1rem rgba(217, 72, 15, 0.3), 0rem -1.5rem rgba(217, 72, 15, 0.2),
+    0rem -2rem rgba(217, 72, 15, 0.1), 0rem -2.5rem rgba(217, 72, 15, 0.05);
 }
 
 /* ************* */
