@@ -1,0 +1,75 @@
+/* FILTER BUTTON */
+/* ************* */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-spacer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown-select {
+  width: 23%;
+  border: 0.1rem solid #212529;
+  padding: 0.5rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.dropbtn,
+.dropbtn:visited {
+  background-color: #c92a2a;
+  color: #fff5f5;
+  border: none;
+  padding: 0.8rem;
+  font-size: inherit;
+  cursor: pointer;
+  width: 23%;
+  text-transform: uppercase;
+
+  /* display: flex;
+  align-items: center; */
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #d9480f;
+}
+
+/* .dropdown-select option {
+  color: #fff5f5;
+  background-color: red;
+  width: 20%;
+  position: absolute;
+  top: 0;
+} */
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe3e3;
+  min-width: 23rem;
+  border: 1px solid #333;
+  z-index: 1000;
+} */
+
+/* .dropdown-content a {
+  color: #212529;
+  padding: 1.2rem 1.6rem;
+  display: block;
+}
+
+.dropdown-content[data-visible="true"] {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff5f5;
+} */
