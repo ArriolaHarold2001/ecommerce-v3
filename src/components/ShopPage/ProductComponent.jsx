@@ -10,7 +10,7 @@ const ProductComponent = () => {
           <h2>{data.title}</h2>
           <img src={data.productImg} className="shop-img" alt={data.alt} />
           <p>{data.description}</p>
-          <h5>{data.price}</h5>
+          <h5>${data.price}</h5>
         </div>
       ))}
     </>

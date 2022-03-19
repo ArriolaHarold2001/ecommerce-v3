@@ -47,53 +47,6 @@ h5 {
 /* SHOP PAGE */
 /* ********* */
 
-/* FILTER BUTTON */
-/* ************* */
-
-.dropbtn {
-  background-color: #c92a2a;
-  color: #fff5f5;
-  border: none;
-  padding: 1.6rem;
-  font-size: 1.6rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.dropbtn:hover,
-dropbtn:focus {
-  background-color: #d9480f;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffe3e3;
-  min-width: 23rem;
-  border: 1px solid #333;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  color: #212529;
-  padding: 1.2rem 1.6rem;
-  display: block;
-}
-
-.dropdown-content[data-visible="true"] {
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #fff5f5;
-}
-
 /* SHOP GRID */
 /* ********* */
 .shop-section_grid {
