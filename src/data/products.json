@@ -258,7 +258,7 @@
   "dropFilter": [
     {
       "id": 1,
-      "category": "----"
+      "category": "All"
     },
     {
       "id": 2,
@@ -282,7 +282,7 @@
     },
     {
       "id": 6,
-      "category": "Cars"
+      "category": "Car Prints"
     }
   ]
 }

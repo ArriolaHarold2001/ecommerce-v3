@@ -7,7 +7,9 @@ const ProductComponent = ({ filterOption }) => {
     <>
       {products
         .filter((vary) => {
-          if (filterOption === "Price < $50" && vary.price < 50.0) {
+          if (filterOption === "All") {
+            return vary;
+          } else if (filterOption === "Price < $50" && vary.price < 50.0) {
             return vary;
           } else if (filterOption === "Price > $15" && vary.price > 15.0) {
             return vary;
@@ -21,8 +23,6 @@ const ProductComponent = ({ filterOption }) => {
           ) {
             return vary;
           } else if (filterOption === "Cars" && vary.cat === "car") {
-            return vary;
-          } else {
             return vary;
           }
         })
