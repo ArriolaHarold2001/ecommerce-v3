@@ -255,6 +255,7 @@
       "alt": "customer smiling at camera"
     }
   ],
+
   "dropFilter": [
     {
       "id": 1,
@@ -283,6 +284,46 @@
     {
       "id": 6,
       "category": "Car Prints"
+    }
+  ],
+
+  "formCreation": [
+    {
+      "id": 1,
+      "inID": "first-name",
+      "labelName": "First Name",
+      "placeHolder": "Joe? Maria?...",
+      "type": "text",
+      "required": "required",
+      "name": "name"
+    },
+    {
+      "id": 2,
+      "inID": "last-name",
+      "labelName": "Last Name",
+      "placeHolder": "Smith? Johnson?...",
+      "type": "text",
+      "required": "required",
+      "name": "name"
+    },
+    {
+      "id": 3,
+      "inID": "email",
+      "labelName": "Email",
+      "placeHolder": "Email@email.com",
+      "type": "email",
+      "required": "required",
+      "name": "email"
+    },
+    {
+      "id": 4,
+      "inID": "phone-number",
+      "labelName": "Phone Number",
+      "placeHolder": "Ill send a goodnight txt",
+      "pattern": "[0-9]{10}",
+      "type": "text",
+      "required": "required",
+      "name": "phoneNumber"
     }
   ]
 }
