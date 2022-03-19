@@ -22,7 +22,7 @@ const ProductComponent = ({ filterOption }) => {
             vary.cat === "nature"
           ) {
             return vary;
-          } else if (filterOption === "Cars" && vary.cat === "car") {
+          } else if (filterOption === "Car Prints" && vary.cat === "car") {
             return vary;
           }
         })
