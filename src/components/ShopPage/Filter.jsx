@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Data from "../../data/products.json";
 import "./filter.css";
+import ProductComponent from "./ProductComponent";
 
 const Filter = () => {
   let [filterOp, setFilterOp] = useState("");
@@ -59,6 +60,7 @@ const Filter = () => {
           <a href="#">Signature Shots</a>
         </div> */}
       </aside>
+      <ProductComponent filterOption={filterOp} />
     </>
   );
 };

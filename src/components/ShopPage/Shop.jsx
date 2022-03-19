@@ -14,7 +14,7 @@ const Shop = () => {
 
       <main className="shop-section_grid">
         <Filter />
-        <ProductComponent />
+        {/* <ProductComponent /> */}
       </main>
       <Footer />
     </>
