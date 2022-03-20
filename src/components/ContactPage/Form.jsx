@@ -7,19 +7,6 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  // const handleFirstName = (type) => {
-  //   console.log(type);
-  // };
-  // const handleLastName = (type) => {
-  //   console.log(type);
-  // };
-  // const handleEmail = (type) => {
-  //   console.log(type);
-  // };
-  // const handlePhoneNumber = (type) => {
-  //   console.log(type);
-  // };
-
   const parseNames = (strings) => {
     strings = strings.replace(/\s+/g, "");
     strings = strings.toLowerCase().split("").sort().join("");
