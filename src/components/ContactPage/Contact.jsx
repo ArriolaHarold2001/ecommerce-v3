@@ -11,10 +11,7 @@ const Contact = () => {
     <>
       <Nav />
       <ContactHero />
-      <form className="contact-form">
-        <Form />
-      </form>
-
+      <Form />
       <Footer />
     </>
   );

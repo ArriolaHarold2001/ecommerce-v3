@@ -7,11 +7,13 @@ const Form = () => {
   };
 
   const handleSubmit = (submit) => {
-    // submit.preventDefault();
+    submit.preventDefault();
+    console.log(submit.target);
+    console.log(submit);
   };
 
   return (
-    <>
+    <form onSubmit={handleSubmit} className="contact-form" id="form" noValidate>
       {Data.formCreation.map((item) => (
         <div className="form-item" key={item.id}>
           <label htmlFor={item.inID}>{item.labelName}</label>
@@ -19,7 +21,6 @@ const Form = () => {
             onChange={handleForm}
             name={item.name}
             required={item.required}
-            // placeholder={item.placeHolder}
             id={item.inID}
             type={item.type}
             pattern={item.pattern}
@@ -35,10 +36,10 @@ const Form = () => {
           name="comment"
         ></textarea>
       </div>
-      <button className="form-btn form-item_06" name="submit" type="submit">
+      <button className="form-btn form-item_06" name="submit" for="form">
         Send
       </button>
-    </>
+    </form>
   );
 };
 
