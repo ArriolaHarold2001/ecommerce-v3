@@ -15,6 +15,8 @@ const db = mysql.createPool({
   user: "root",
   password: "password",
   database: "ecommerce",
+  port: "8889",
+  socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
 });
 
 // app.use(express.static(path.join(__dirname, "client", "build")));
