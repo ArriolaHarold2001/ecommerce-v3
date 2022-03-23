@@ -4,15 +4,20 @@ import Axios from "axios";
 const ProductComponent = ({ filterOption }) => {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
+  const getData = () => {
     Axios.get("http://127.0.0.1:8000/api/products")
       .then((response) => {
         setProducts(response.data);
+        console.log(products);
       })
       .catch((err) => {
         throw err;
       });
-  });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <>
@@ -24,16 +29,22 @@ const ProductComponent = ({ filterOption }) => {
             return vary;
           } else if (filterOption === "Price > $15" && vary.price > 15.0) {
             return vary;
-          } else if (filterOption === "Fire Prints" && vary.cat === "fire") {
+          } else if (
+            filterOption === "Fire Prints" &&
+            vary.category === "fire"
+          ) {
             return vary;
-          } else if (filterOption === "Portraits" && vary.cat === "portrait") {
+          } else if (
+            filterOption === "Portraits" &&
+            vary.category === "portrait"
+          ) {
             return vary;
           } else if (
             filterOption === "Nature Prints" &&
-            vary.cat === "nature"
+            vary.category === "nature"
           ) {
             return vary;
-          } else if (filterOption === "Car Prints" && vary.cat === "car") {
+          } else if (filterOption === "Car Prints" && vary.category === "car") {
             return vary;
           }
         })
