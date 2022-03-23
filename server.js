@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-const SQL_PORT = process.env.SQL_PORT;
+const PORT = process.env.PORT;
 
 const db = mysql.createPool({
   host: "localhost",
@@ -62,6 +62,6 @@ app.get("/api/drop-filter", (req, res) => {
   });
 });
 
-app.listen(SQL_PORT, () => {
-  console.log(`Listening on SQL_PORT ${SQL_PORT}`);
+app.listen(PORT, () => {
+  console.log(`Listening on SQL_PORT ${PORT}`);
 });
