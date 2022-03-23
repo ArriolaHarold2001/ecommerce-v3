@@ -11,7 +11,7 @@ app.use(cors());
 const SQL_PORT = process.env.SQL_PORT;
 
 const db = mysql.createPool({
-  host: "127.0.0.1",
+  host: "18.218.96.32",
   user: "root",
   password: "password",
   database: "ecommerce",
