@@ -6,7 +6,7 @@ const FeaturedProducts2 = () => {
   const [leatherProducts, setLeatherProducts] = useState([]);
 
   const getData = () => {
-    Axios.get("http://nucaprints.com:8000/api/featured-products")
+    Axios.get("http://localhost:8000/api/featured-products")
       .then((response) => {
         setLeatherProducts(response.data);
       })
