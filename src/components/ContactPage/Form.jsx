@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Data from "../../data/products.json";
 
 const Form = () => {
   const [firstName, setFirstName] = useState("");

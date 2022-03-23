@@ -1,9 +1,14 @@
-import React, { useState } from "react";
-import Data from "../../data/products.json";
+import { Axios } from "axios";
+import React, { useState, useEffect } from "react";
 import "./featuredSectionsStyles.css";
 
 const FeaturedProducts2 = () => {
-  const [leatherProducts, setLeatherProducts] = useState(Data.featuredProducts);
+  const [leatherProducts, setLeatherProducts] = useState([]);
+
+  useEffect(() => {
+    Axios.get("http://127.0.0.1:8000/api/");
+  });
+
   return (
     <>
       {leatherProducts.leatherSection.map((leatherContent) => (

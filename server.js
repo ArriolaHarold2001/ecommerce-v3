@@ -1,8 +1,14 @@
 const express = require("express");
-const path = require("path");
 const mysql = require("mysql");
-const axios = require("axios");
+const cors = require("cors");
+// const path = require("path");
 require("dotenv").config();
+
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+const SQL_PORT = process.env.SQL_PORT;
 
 const db = mysql.createPool({
   host: "127.0.0.1",
@@ -11,21 +17,17 @@ const db = mysql.createPool({
   database: "ecommerce",
 });
 
-const app = express();
-app.use(express.json());
-app.use(express.static(path.join(__dirname, "client", "build")));
+// app.use(express.static(path.join(__dirname, "client", "build")));
 
-const PORT = process.env.PORT;
-
-app.get("/", (req, res) => {
+app.get("/api/products", (req, res) => {
   db.query("SELECT * FROM products", (err, result) => {
     if (err) {
       throw err;
     }
-    res.status(200).send(result);
+    res.status(200).json(result);
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+app.listen(SQL_PORT, () => {
+  console.log(`Listening on SQL_PORT ${SQL_PORT}`);
 });

@@ -1,8 +1,19 @@
-import React, { useState } from "react";
-import Data from "../../data/products.json";
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 
 const ProductComponent = ({ filterOption }) => {
-  const [products, setProducts] = useState(Data.products);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    Axios.get("http://127.0.0.1:8000/api/products")
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((err) => {
+        throw err;
+      });
+  });
+
   return (
     <>
       {products

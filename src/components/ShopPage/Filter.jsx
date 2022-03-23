@@ -1,10 +1,21 @@
-import React, { useState } from "react";
-import Data from "../../data/products.json";
+import { Axios } from "axios";
+import React, { useEffect, useState } from "react";
 import "./filter.css";
 import ProductComponent from "./ProductComponent";
 
 const Filter = () => {
+  const [filterList, setFilterList] = useState([]);
   let [filterOp, setFilterOp] = useState("All");
+
+  useEffect(() => {
+    Axios.get("http://127.0.0.1:8000/api/dropFilter")
+      .then((response) => {
+        setFilterList(response.data);
+      })
+      .catch((err) => {
+        throw err;
+      });
+  });
 
   const handleFilterChange = (e) => {
     setFilterOp(e.target.value);
@@ -14,7 +25,7 @@ const Filter = () => {
     <>
       <aside className="shop-nav dropdown">
         <div className="dropdown-spacer">
-          <label for="drop-down">Choose Filter</label>
+          <label htmlFor="drop-down">Choose Filter</label>
           <select
             id="drop-down"
             type="text"
@@ -22,7 +33,7 @@ const Filter = () => {
             className="dropdown-select"
             onChange={handleFilterChange}
           >
-            {Data.dropFilter.map((item) => (
+            {filterList.dropFilter.map((item) => (
               <option key={item.id} value={item.category}>
                 {item.category}
               </option>

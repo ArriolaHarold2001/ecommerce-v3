@@ -1,15 +1,26 @@
-import React, { useState } from "react";
-import Data from "../../data/products.json";
+import { Axios } from "axios";
+import React, { useEffect, useState } from "react";
 import BtnSlider from "./BtnSlider";
 import "./slider.css";
 
 const Slider = () => {
+  const [sliderImg, setSliderImg] = useState([]);
   const [slideIndex, setSlideIndex] = useState(1);
 
+  useEffect(() => {
+    Axios.get("http://127.0.0.1:8000/api/slider")
+      .then((response) => {
+        setSliderImg(response.data);
+      })
+      .catch((err) => {
+        throw err;
+      });
+  });
+
   const nextSlide = () => {
-    if (slideIndex !== Data.slider.length) {
+    if (slideIndex !== sliderImg.slider.length) {
       setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === Data.slider.length) {
+    } else if (slideIndex === sliderImg.slider.length) {
       setSlideIndex(1);
     }
   };
@@ -18,7 +29,7 @@ const Slider = () => {
     if (slideIndex !== 1) {
       setSlideIndex(slideIndex - 1);
     } else if (slideIndex === 1) {
-      setSlideIndex(Data.slider.length);
+      setSlideIndex(sliderImg.slider.length);
     }
   };
 
@@ -27,7 +38,7 @@ const Slider = () => {
       <div className="testimonial-container">
         <h2>Thanks to our loyal customers</h2>
         <div className="slider-container">
-          {Data.slider.map((e, index) => (
+          {sliderImg.slider.map((e, index) => (
             <div
               key={e.id}
               className={
