@@ -5,7 +5,7 @@ const ProductComponent = ({ filterOption }) => {
   const [products, setProducts] = useState([]);
 
   const getData = () => {
-    Axios.get("http://127.0.0.1:8000/api/products")
+    Axios.get("http://nucaprints.com:8000/api/products")
       .then((response) => {
         setProducts(response.data);
         console.log(products);
