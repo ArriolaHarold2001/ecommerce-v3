@@ -1,7 +1,7 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
-// const path = require("path");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -17,7 +17,11 @@ const db = mysql.createPool({
   database: "ecommerce",
 });
 
-// app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+app.get("/", (req, res) => {
+  res.status(200).send("hello");
+});
 
 app.get("/api/products", (req, res) => {
   db.query("SELECT * FROM products", (err, result) => {
