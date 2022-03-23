@@ -17,7 +17,7 @@ const db = mysql.createPool({
   database: "ecommerce",
   port: "3306",
   // port: "8889",
-  socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
+  // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
 });
 
 // app.use(express.static(path.join(__dirname, "client", "build")));
