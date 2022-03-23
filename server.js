@@ -15,7 +15,8 @@ const db = mysql.createPool({
   user: "root",
   password: "password",
   database: "ecommerce",
-  port: "8889",
+  port: "3306",
+  // port: "8889",
   socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
 });
 
