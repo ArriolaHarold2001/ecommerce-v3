@@ -24,6 +24,7 @@ db.connect((err) => {
   if (err) {
     throw err;
   }
+  console.log("DataBase Connection Success");
 });
 
 // app.use(express.static(path.join(__dirname, "client", "build")));
