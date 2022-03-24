@@ -11,8 +11,8 @@ app.use(cors());
 const SQL_PORT = process.env.SQL_PORT;
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
+  host: "ecommerce.ctul2xxq1xtc.us-east-2.rds.amazonaws.com",
+  user: "admin",
   password: "password",
   database: "ecommerce",
   // port: "8000",
