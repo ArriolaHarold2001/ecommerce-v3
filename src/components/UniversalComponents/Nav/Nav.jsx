@@ -35,7 +35,7 @@ const Nav = () => {
       </button>
       <nav className="nav-section_main nav-section_main-mobile">
         <div className="nav-section_logo">
-          <a href="/home">NucaPrints</a>
+          <a href="/">NucaPrints</a>
         </div>
         <div className="nav-section_spacer" data-visible={navItem}>
           <a href="/">Home</a>
