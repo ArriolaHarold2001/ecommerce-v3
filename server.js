@@ -16,7 +16,7 @@ const db = mysql.createConnection({
   password: "password",
   database: "ecommerce",
   // port: "8000",
-  port: "/var/run/mysqld/mysqld.sock",
+  port: 3306,
   // port: "8889",
   // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
 });
