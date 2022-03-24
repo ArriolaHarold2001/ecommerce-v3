@@ -13,7 +13,7 @@ const SQL_PORT = process.env.SQL_PORT;
 const db = mysql.createConnection({
   host: "3.145.142.113",
   user: "root",
-  password: "!Frenchhk987!",
+  password: "password",
   database: "ecommerce",
   // port: "8000",
   port: "3306",
