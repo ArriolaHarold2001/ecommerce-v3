@@ -10,14 +10,20 @@ app.use(express.json());
 app.use(cors());
 const SQL_PORT = process.env.SQL_PORT;
 
-const db = mysql.createPool({
+const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "password",
   database: "ecommerce",
-  port: "3306",
+  // port: "3306",
   // port: "8889",
   // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
+});
+
+db.connect((err) => {
+  if (err) {
+    throw err;
+  }
 });
 
 // app.use(express.static(path.join(__dirname, "client", "build")));
