@@ -13,7 +13,7 @@ const SQL_PORT = process.env.SQL_PORT;
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "!Frenchhk987!",
+  password: "",
   database: "ecommerce",
   // port: "3306",
   // port: "8889",
@@ -27,10 +27,6 @@ db.connect((err) => {
 });
 
 // app.use(express.static(path.join(__dirname, "client", "build")));
-
-app.get("/", (req, res) => {
-  res.status(200).send("hello");
-});
 
 app.get("/api/products", (req, res) => {
   db.query("SELECT * FROM products", (err, result) => {
