@@ -12,13 +12,10 @@ const SQL_PORT = process.env.SQL_PORT;
 
 const db = mysql.createConnection({
   host: "ecommerce.ctul2xxq1xtc.us-east-2.rds.amazonaws.com",
+  port: 3306,
   user: "admin",
   password: "password",
   database: "ecommerce",
-  // port: "8000",
-  port: 3306,
-  // port: "8889",
-  // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
 });
 
 db.connect((err) => {
