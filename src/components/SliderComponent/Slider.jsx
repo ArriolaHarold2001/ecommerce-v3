@@ -4,7 +4,7 @@ import BtnSlider from "./BtnSlider";
 import "./slider.css";
 
 const Slider = () => {
-  const SQL_IP = "18.224.165.231";
+  const SQL_IP = "52.15.168.232";
   const [sliderImg, setSliderImg] = useState([]);
   const [slideIndex, setSlideIndex] = useState(1);
 

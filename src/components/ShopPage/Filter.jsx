@@ -4,7 +4,7 @@ import "./filter.css";
 import ProductComponent from "./ProductComponent";
 
 const Filter = () => {
-  const SQL_IP = "18.224.165.231";
+  const SQL_IP = "52.15.168.232";
   const [filterList, setFilterList] = useState([]);
   let [filterOp, setFilterOp] = useState("All");
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./featuredSectionsStyles.css";
 
 const FeaturedProducts1 = () => {
-  const SQL_IP = "18.224.165.231";
+  const SQL_IP = "52.15.168.232";
   const [fireProducts, setFireProducts] = useState([]);
 
   const getData = () => {

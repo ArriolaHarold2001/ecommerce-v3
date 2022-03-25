@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 const ProductComponent = ({ filterOption }) => {
-  const SQL_IP = "18.224.165.231";
+  const SQL_IP = "52.15.168.232";
   const [products, setProducts] = useState([]);
 
   const getData = () => {
