@@ -4,11 +4,12 @@ import BtnSlider from "./BtnSlider";
 import "./slider.css";
 
 const Slider = () => {
+  const SQL_IP = "18.224.165.231";
   const [sliderImg, setSliderImg] = useState([]);
   const [slideIndex, setSlideIndex] = useState(1);
 
   const getData = () => {
-    Axios.get("http://localhost:8000/api/slider")
+    Axios.get(`http://${SQL_IP}:8000/api/slider`)
       .then((response) => {
         setSliderImg(response.data);
       })

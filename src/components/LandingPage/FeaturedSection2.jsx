@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 import "./featuredSectionsStyles.css";
 
 const FeaturedProducts2 = () => {
+  const SQL_IP = "18.224.165.231";
   const [leatherProducts, setLeatherProducts] = useState([]);
 
   const getData = () => {
-    Axios.get("http://localhost:8000/api/featured-products")
+    Axios.get(`http://${SQL_IP}:8000/api/featured-products`)
       .then((response) => {
         setLeatherProducts(response.data);
       })
