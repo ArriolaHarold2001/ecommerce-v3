@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 const ProductComponent = ({ filterOption }) => {
-  const SQL_IP = "52.15.168.232";
+  const SQL_IP = "18.117.176.218";
   const [products, setProducts] = useState([]);
 
   const getData = () => {
     Axios.get(`http://${SQL_IP}:8000/api/products`)
       .then((response) => {
         setProducts(response.data);
-        console.log(products);
       })
       .catch((err) => {
         throw err;
