@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react";
 import "./featuredSectionsStyles.css";
 
 const FeaturedProducts2 = () => {
-  const SQL_IP = "18.117.176.218";
+  const SQL_IP = "3.23.99.126";
   const [leatherProducts, setLeatherProducts] = useState([]);
 
   const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/featured-products`)
+    Axios.get(`http://nucaprints.com:8000/api/featured-products`)
       .then((response) => {
         setLeatherProducts(response.data);
       })

@@ -9,7 +9,7 @@ const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
   const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/slider`)
+    Axios.get(`http://nucaprints.com:8000/api/slider`)
       .then((response) => {
         setSliderImg(response.data);
       })

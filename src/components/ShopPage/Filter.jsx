@@ -4,12 +4,12 @@ import "./filter.css";
 import ProductComponent from "./ProductComponent";
 
 const Filter = () => {
-  const SQL_IP = "18.117.176.218";
+  const SQL_IP = "3.23.99.126";
   const [filterList, setFilterList] = useState([]);
   let [filterOp, setFilterOp] = useState("All");
 
   const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/drop-filter`)
+    Axios.get(`http://nucaprints.com:8000/api/drop-filter`)
       .then((response) => {
         setFilterList(response.data);
       })
