@@ -9,7 +9,7 @@ const Filter = () => {
   let [filterOp, setFilterOp] = useState("All");
 
   const getData = () => {
-    Axios.get(`http://nucaprints.com:8000/api/drop-filter`)
+    Axios.get(`http://${SQL_IP}:8000/api/drop-filter`)
       .then((response) => {
         setFilterList(response.data);
       })

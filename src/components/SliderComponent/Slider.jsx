@@ -4,12 +4,12 @@ import BtnSlider from "./BtnSlider";
 import "./slider.css";
 
 const Slider = () => {
-  const SQL_IP = "18.117.176.218";
+  const SQL_IP = "3.23.99.126";
   const [sliderImg, setSliderImg] = useState([]);
   const [slideIndex, setSlideIndex] = useState(1);
 
   const getData = () => {
-    Axios.get(`http://nucaprints.com:8000/api/slider`)
+    Axios.get(`http://${SQL_IP}:8000/api/slider`)
       .then((response) => {
         setSliderImg(response.data);
       })
