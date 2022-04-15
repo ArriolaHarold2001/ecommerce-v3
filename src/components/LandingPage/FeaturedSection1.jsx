@@ -2,24 +2,7 @@ import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./featuredSectionsStyles.css";
 
-const FeaturedProducts1 = () => {
-  const SQL_IP = "3.23.99.126";
-  const [fireProducts, setFireProducts] = useState([]);
-
-  const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/featured-products`)
-      .then((response) => {
-        setFireProducts(response.data);
-      })
-      .catch((err) => {
-        throw err;
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+const FeaturedProducts1 = ({ fireProducts }) => {
   return (
     <>
       {fireProducts

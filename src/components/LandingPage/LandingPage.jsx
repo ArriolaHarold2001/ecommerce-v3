@@ -6,7 +6,7 @@ import FeaturedProducts2 from "./FeaturedSection2";
 import Slider from "../SliderComponent/Slider";
 // import "../../App.css";
 
-const LandingPage = () => {
+const LandingPage = ({ featuredProducts, slider }) => {
   return (
     <>
       <Nav />
@@ -17,7 +17,7 @@ const LandingPage = () => {
             <h2>Hot Prints</h2>
             <p>Check out our latest and freshest prints</p>
           </header>
-          <FeaturedProducts1 />
+          <FeaturedProducts1 fireProducts={featuredProducts} />
         </section>
 
         <section className="featured-section_second">
@@ -27,10 +27,10 @@ const LandingPage = () => {
               Specialist NucaPrints designer will handcraft the clothes you buy
             </p>
           </header>
-          <FeaturedProducts2 />
+          <FeaturedProducts2 leatherProducts={featuredProducts} />
         </section>
       </main>
-      <Slider />
+      <Slider slider={slider} />
       <Footer />
     </>
   );

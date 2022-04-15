@@ -1,24 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
-const ProductComponent = ({ filterOption }) => {
-  const SQL_IP = "3.23.99.126";
-  const [products, setProducts] = useState([]);
-
-  const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/products`)
-      .then((response) => {
-        setProducts(response.data);
-      })
-      .catch((err) => {
-        throw err;
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+const ProductComponent = ({ filterOption, products }) => {
   return (
     <>
       {products

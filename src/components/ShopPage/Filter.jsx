@@ -3,24 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./filter.css";
 import ProductComponent from "./ProductComponent";
 
-const Filter = () => {
-  const SQL_IP = "3.23.99.126";
-  const [filterList, setFilterList] = useState([]);
+const Filter = ({ shopPageFilter, products }) => {
   let [filterOp, setFilterOp] = useState("All");
-
-  const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/drop-filter`)
-      .then((response) => {
-        setFilterList(response.data);
-      })
-      .catch((err) => {
-        throw err;
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   const handleFilterChange = (e) => {
     setFilterOp(e.target.value);
@@ -38,7 +22,7 @@ const Filter = () => {
             className="dropdown-select"
             onChange={handleFilterChange}
           >
-            {filterList.map((item) => (
+            {shopPageFilter.map((item) => (
               <option key={item.id} value={item.category}>
                 {item.category}
               </option>
@@ -49,7 +33,7 @@ const Filter = () => {
           </button>
         </div>
       </aside>
-      <ProductComponent filterOption={filterOp} />
+      <ProductComponent filterOption={filterOp} products={products} />
     </>
   );
 };

@@ -3,29 +3,13 @@ import React, { useEffect, useState } from "react";
 import BtnSlider from "./BtnSlider";
 import "./slider.css";
 
-const Slider = () => {
-  const SQL_IP = "3.23.99.126";
-  const [sliderImg, setSliderImg] = useState([]);
+const Slider = ({ slider }) => {
   const [slideIndex, setSlideIndex] = useState(1);
 
-  const getData = () => {
-    Axios.get(`http://${SQL_IP}:8000/api/slider`)
-      .then((response) => {
-        setSliderImg(response.data);
-      })
-      .catch((err) => {
-        throw err;
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
   const nextSlide = () => {
-    if (slideIndex !== sliderImg.length) {
+    if (slideIndex !== slider.length) {
       setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === sliderImg.length) {
+    } else if (slideIndex === slider.length) {
       setSlideIndex(1);
     }
   };
@@ -34,7 +18,7 @@ const Slider = () => {
     if (slideIndex !== 1) {
       setSlideIndex(slideIndex - 1);
     } else if (slideIndex === 1) {
-      setSlideIndex(sliderImg.length);
+      setSlideIndex(slider.length);
     }
   };
 
@@ -43,7 +27,7 @@ const Slider = () => {
       <div className="testimonial-container">
         <h2>Thanks to our loyal customers</h2>
         <div className="slider-container">
-          {sliderImg.map((e, index) => (
+          {slider.map((e, index) => (
             <div
               key={e.id}
               className={
